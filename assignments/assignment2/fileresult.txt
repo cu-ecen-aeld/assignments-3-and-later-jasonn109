@@ -1,0 +1,8 @@
+jason@jason:~/AES/AES/finder-app$ make CROSS_COMPILE=aarch64-none-linux-gnu-
+aarch64-none-linux-gnu-gcc -Wall -Wextra -Werror -c writer.c
+aarch64-none-linux-gnu-gcc -Wall -Wextra -Werror -o writer writer.o
+jason@jason:~/AES/AES/finder-app$ CROSS_COMPILE
+CROSS_COMPILE: command not found
+jason@jason:~/AES/AES/finder-app$ $CROSS_COMPILE
+jason@jason:~/AES/AES/finder-app$ file writer
+writer: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, for GNU/Linux 3.7.0, with debug_info, not stripped
